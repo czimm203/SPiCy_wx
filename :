@@ -1,0 +1,35 @@
+#!/usr/bin/python3
+
+import urllib.request
+import zipfile
+import io
+import xml.etree.ElementTree as ET
+from geometry.point import Point
+from geometry.polygon import Polygon
+
+day_1_cat_url = "https://www.spc.noaa.gov/products/outlook/day1otlk_cat.kmz"
+
+with urllib.request.urlopen(day_1_cat_url) as r:
+    data = r.read()
+
+with zipfile.ZipFile(io.BytesIO(data)) as f:
+    with f.open('day1otlk_cat.kml') as k:
+        raw_kml = k.read()
+
+tree = ET.parse(io.BytesIO(raw_kml))
+
+root = tree.getroot()
+
+doc = root.find('./document/folder')
+namespace = "{http://earth.google.com/kml/2.2}"
+for elem in root.iter(f"{namespace}Placemark"):
+    name = elem.find(f'{namespace}name').text
+    coords = elem.find(f"{namespace}coordinates").text
+    points = []
+    for point in coords.split(' '):
+        xy = point.split(',')
+        points.append(geometry.point.Point(float(xy[0]), float(xy[1])))
+
+    p = Polygon(points)
+
+    print(p.contains(0,0))

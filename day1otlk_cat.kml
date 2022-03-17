@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+<name>20220316 2000Z Day 1 Categorical Outlook</name>
+<description>
+<![CDATA[
+Issue Time 0244 PM CDT WED MAR 16 2022<br />
+Valid Time 2022-03-16 2000Z - 2022-03-17 1200Z
+Visit <a href="https://www.spc.noaa.gov/products/outlook/">www.spc.noaa.gov/products/outlook/</a> for more info.
+]]>
+</description>
+
+<Schema name="day_1otlk_20220316_2000_cat" id="day_1otlk_20220316_2000_cat">
+	<SimpleField name="DN" type="int"></SimpleField>
+	<SimpleField name="VALID" type="string"></SimpleField>
+	<SimpleField name="EXPIRE" type="string"></SimpleField>
+	<SimpleField name="ISSUE" type="string"></SimpleField>
+	<SimpleField name="LABEL" type="string"></SimpleField>
+	<SimpleField name="LABEL2" type="string"></SimpleField>
+	<SimpleField name="stroke" type="string"></SimpleField>
+	<SimpleField name="fill" type="string"></SimpleField>
+</Schema>
+<Folder><name>day_1otlk_20220316_2000_cat</name><open>1</open><visibility>1</visibility>
+<Placemark><TimeSpan><begin>2022-03-16T20:00:00Z</begin><end>2022-03-17T12:00:00Z</end></TimeSpan>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+<name>General Thunder</name>
+<Style><LineStyle><color>ffffffff</color><width>4</width></LineStyle><PolyStyle><fill>1</fill><color>c0c0e8c0</color><width>3</width><outline>1</outline></PolyStyle></Style>        <ExtendedData><SchemaData schemaUrl="#day_1otlk_20220316_2000_cat">
+		<SimpleData name="DN">2</SimpleData>
+		<SimpleData name="VALID">202203162000</SimpleData>
+		<SimpleData name="EXPIRE">202203171200</SimpleData>
+		<SimpleData name="ISSUE">202203161944</SimpleData>
+		<SimpleData name="LABEL">TSTM</SimpleData>
+		<SimpleData name="LABEL2">General Thunderstorms Risk</SimpleData>
+		<SimpleData name="stroke">#55BB55</SimpleData>
+		<SimpleData name="fill">#C1E9C1</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-76.934816568047339,34.357970414201183 -77.06,34.89 -77.65,35.09 -78.93,34.89 -80.59,34.63 -83.01,34.03 -84.98,33.74 -85.86,33.34 -86.27,32.65 -86.2,32.11 -86.02,31.74 -85.66,31.53 -84.84,31.5 -84.0,31.47 -83.29,31.46 -82.54,30.97 -82.05,29.95 -82.2,29.0 -82.49,28.24 -82.92,27.69 -83.104481745986405,27.531140718733926 -83.105,27.532 -83.07,27.615 -83.183,27.781 -83.185,28.105 -83.169394321044194,28.249217998626044 -82.69,28.88 -82.46,29.46 -82.76,30.53 -83.18,31.16 -83.91,31.15 -85.02,30.76 -85.96,30.74 -86.6,31.38 -87.11,32.57 -87.84,34.01 -87.78,34.47 -87.26,34.7 -86.3,34.78 -85.19,34.76 -83.25,35.19 -82.42,35.41 -80.4,36.45 -78.83,37.4 -77.72,37.98 -76.21,37.88 -75.208581395348844,37.58427906976744 -75.263,37.548 -75.356,37.334 -75.645,36.894 -75.371,36.199 -75.12,35.649 -75.166,35.243 -75.279,34.984 -75.429,34.931 -75.726,34.857 -76.265,34.375 -76.54,34.248 -76.776,34.354 -76.934816568047339,34.357970414201183</coordinates></LinearRing></outerBoundaryIs></Polygon><Polygon><outerBoundaryIs><LinearRing><coordinates>-82.720523295019149,26.894525670498084 -81.52,27.24 -81.14,27.18 -80.86,26.85 -80.82,26.21 -80.66,25.89 -80.3,25.66 -79.81064312849162,25.595232178770953 -79.812,25.576 -79.965,25.158 -80.143,24.859 -80.331,24.705 -80.635,24.487 -81.054,24.361 -81.782,24.208 -82.816,24.169 -83.288,24.221 -83.28,24.513 -83.238,24.798 -83.163,25.012 -82.313,25.017 -82.368,25.134 -82.51,25.288 -82.632,25.453 -81.934,25.61 -82.143,26.09 -82.324,26.171 -82.535,26.48 -82.719,26.892 -82.720523295019149,26.894525670498084</coordinates></LinearRing></outerBoundaryIs></Polygon><Polygon><outerBoundaryIs><LinearRing><coordinates>-111.06,40.41 -109.45,40.22 -108.57,39.6 -107.59,39.25 -106.63,39.19 -105.66,38.55 -105.58,37.76 -106.61,37.13 -107.6,36.64 -107.81,36.22 -108.6,34.47 -109.09,34.02 -109.92,33.87 -110.43,34.02 -111.62,34.67 -112.94,35.02 -114.05,35.93 -115.99,37.24 -116.32,38.15 -115.92,38.89 -114.01,39.87 -113.11,39.96 -111.06,40.41</coordinates></LinearRing></outerBoundaryIs></Polygon><Polygon><outerBoundaryIs><LinearRing><coordinates>-105.5,46.11 -107.51,45.69 -109.11,45.77 -110.18,46.18 -111.8,47.22 -112.0,48.75 -109.44,48.57 -107.98,48.58 -105.37,47.84 -104.9,46.97 -105.5,46.11</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+<Placemark><TimeSpan><begin>2022-03-16T20:00:00Z</begin><end>2022-03-17T12:00:00Z</end></TimeSpan>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+<name>Marginal Risk</name>
+<Style><LineStyle><color>ffffffff</color><width>4</width></LineStyle><PolyStyle><fill>1</fill><color>c07fc57f</color><width>4</width><outline>1</outline></PolyStyle></Style>
+        <ExtendedData><SchemaData schemaUrl="#day_1otlk_20220316_2000_cat">
+		<SimpleData name="DN">3</SimpleData>
+		<SimpleData name="VALID">202203162000</SimpleData>
+		<SimpleData name="EXPIRE">202203171200</SimpleData>
+		<SimpleData name="ISSUE">202203161944</SimpleData>
+		<SimpleData name="LABEL">MRGL</SimpleData>
+		<SimpleData name="LABEL2">Marginal Risk</SimpleData>
+		<SimpleData name="stroke">#005500</SimpleData>
+		<SimpleData name="fill">#66A366</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-78.900860511407132,33.021358903690093 -79.74,33.46 -80.61,33.67 -81.96,33.35 -82.22,32.51 -82.12,32.02 -81.9,31.6 -81.72,31.25 -81.65,30.25 -82.03,28.54 -82.0,27.97 -81.75,27.84 -81.24,27.72 -80.189184068019642,28.048379978743863 -79.788,27.148 -79.7,26.777 -79.766,26.228 -79.81064312849162,25.595232178770953 -80.3,25.66 -80.66,25.89 -80.82,26.21 -80.86,26.85 -81.14,27.18 -81.52,27.24 -82.720523295019149,26.894525670498084 -83.104481745986405,27.531140718733926 -82.92,27.69 -82.49,28.24 -82.2,29.0 -82.05,29.95 -82.54,30.97 -83.29,31.46 -84.0,31.47 -84.84,31.5 -85.66,31.53 -86.02,31.74 -86.2,32.11 -86.27,32.65 -85.86,33.34 -84.98,33.74 -83.01,34.03 -80.59,34.63 -78.93,34.89 -77.65,35.09 -77.06,34.89 -76.934816568047339,34.357970414201183 -76.936,34.358 -77.521,34.032 -77.684,33.615 -77.95,33.516 -78.163,33.577 -78.569,33.483 -78.808,33.309 -78.900860511407132,33.021358903690093</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+<Placemark><TimeSpan><begin>2022-03-16T20:00:00Z</begin><end>2022-03-17T12:00:00Z</end></TimeSpan>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+<name>Slight Risk</name>
+<Style><LineStyle><color>ffffffff</color><width>4</width></LineStyle><PolyStyle><fill>1</fill><color>c07ff6f6</color><width>4</width><outline>1</outline></PolyStyle></Style>
+        <ExtendedData><SchemaData schemaUrl="#day_1otlk_20220316_2000_cat">
+		<SimpleData name="DN">4</SimpleData>
+		<SimpleData name="VALID">202203162000</SimpleData>
+		<SimpleData name="EXPIRE">202203171200</SimpleData>
+		<SimpleData name="ISSUE">202203161944</SimpleData>
+		<SimpleData name="LABEL">SLGT</SimpleData>
+		<SimpleData name="LABEL2">Slight Risk</SimpleData>
+		<SimpleData name="stroke">#DDAA00</SimpleData>
+		<SimpleData name="fill">#FFE066</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-80.189184068019642,28.048379978743863 -81.24,27.72 -81.75,27.84 -82.0,27.97 -82.03,28.54 -81.65,30.25 -81.72,31.25 -81.9,31.6 -82.12,32.02 -82.22,32.51 -81.96,33.35 -80.61,33.67 -79.74,33.46 -78.900860511407132,33.021358903690093 -78.931,32.928 -79.294,32.69 -79.725,32.427 -80.061,32.203 -80.21,32.07 -80.436,31.966 -80.764,31.633 -81.09,30.74 -80.989,30.128 -80.765,29.498 -80.349,28.83 -80.197,28.552 -80.271,28.232 -80.189184068019642,28.048379978743863</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>
