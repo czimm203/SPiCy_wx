@@ -21,5 +21,5 @@ class Polygon:
                 if x >= min(p1.x,p2.x) and x <= max(p1.x, p2.x) and (p1.x > point.x or p2.x > point.x):
                     intercepts += 1
         
-                #print(f"{p1} {p2}: {x} {intercepts}")
+#                print(f"{p1} {p2}: {x} {intercepts}")
         return intercepts % 2 == 1

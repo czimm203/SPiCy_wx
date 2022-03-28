@@ -6,7 +6,18 @@ import xml.etree.ElementTree as ET
 from io import BytesIO
 from geometry.point import Point
 from geometry.polygon import Polygon
+from enum import Enum, auto
 
+
+
+cat = {
+        'General Thunder': 0,
+        'Marginal Risk': 1,
+        'Slight Risk': 2,
+        'Enhanced Risk': 3,
+        'Moderate Risk': 4,
+        'High Risk': 5
+        }
 
 urls = {
         "day_1_conv" : "https://www.spc.noaa.gov/products/outlook/day1otlk_cat.kmz",
@@ -15,15 +26,15 @@ urls = {
         
         "day_1_wind" : "https://www.spc.noaa.gov/products/outlook/day1otlk_wind.kmz",
         "day_2_wind" : "https://www.spc.noaa.gov/products/outlook/day2otlk_wind.kmz",
-        "day_3_wind" : "https://www.spc.noaa.gov/products/outlook/day3otlk_wind.kmz",
+#       "day_3_wind" : "https://www.spc.noaa.gov/products/outlook/day3otlk_wind.kmz",
         
         "day_1_torn" : "https://www.spc.noaa.gov/products/outlook/day1otlk_torn.kmz",
         "day_2_torn" : "https://www.spc.noaa.gov/products/outlook/day2otlk_torn.kmz",
-        "day_3_torn" : "https://www.spc.noaa.gov/products/outlook/day3otlk_torn.kmz",
+#       "day_3_torn" : "https://www.spc.noaa.gov/products/outlook/day3otlk_torn.kmz",
 
         "day_1_hail" : "https://www.spc.noaa.gov/products/outlook/day1otlk_hail.kmz",
         "day_2_hail" : "https://www.spc.noaa.gov/products/outlook/day2otlk_hail.kmz",
-        "day_3_hail" : "https://www.spc.noaa.gov/products/outlook/day3otlk_hail.kmz",
+#       "day_3_hail" : "https://www.spc.noaa.gov/products/outlook/day3otlk_hail.kmz",
 
         "day_1_fire" : "https://www.spc.noaa.gov/products/fire_wx/day1fireotlk.kmz",
         "day_2_fire" : "https://www.spc.noaa.gov/products/fire_wx/day2fireotlk.kmz",
@@ -47,6 +58,7 @@ def fetch_outlook(url: str):
 def check_location(lat: float, lon: float, root):
     doc = root.find('./document/folder')
     namespace = "{http://earth.google.com/kml/2.2}"
+    contained = []
     for elem in root.iter(f"{namespace}Placemark"):
         if elem.find(f"{namespace}name") is not None:
             name = elem.find(f'{namespace}name').text 
@@ -63,27 +75,40 @@ def check_location(lat: float, lon: float, root):
                 p = Polygon(points)
 
                 if p.contains(Point(lon, lat)):
-                    return name
-        return "No Risk"
-            
+                    contained.append(name)
 
+    if len(contained) == 0:
+        return 'No Risk'
+    else:
+        return contained[-1]
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('latlon', nargs = 2 , type = float, default = [34.7303, -86.5861], help="lat and lon of location to check")
+    parser.add_argument('-latlon', default=[34.7303, -86.5861], nargs= 2 ,
+            type = float, metavar=('lat', 'lon'),
+            help="lat and lon of location to check")
     parser.add_argument('-d', '--day', type=int, default=1, help="outlook for day 1, 2 or 3")
     parser.add_argument('-p', '--product', type=str, default='conv', help="Product to use. conv, fire, wind, hail, torn")
-    
+    parser.add_argument('-c', '--complete', action='store_true', help="get complete")
 
     args = parser.parse_args()
     
     day = args.day
     product = args.product
+    if args.complete:
+        outlook = []
+        for key,value in urls.items():
+            root = fetch_outlook(value)
+            thing = check_location(args.latlon[0], args.latlon[1], root)
+            outlook.append(f"{key.replace('_',' ')}: {thing}")
 
-    url = urls[f"day_{day}_{product}"]
-    root = fetch_outlook(url)
+        print('\n'.join(outlook))
 
-    outlook = check_location(args.latlon[0], args.latlon[1], root)
+    else:
+        url = urls[f"day_{day}_{product}"]
+        root = fetch_outlook(url)
 
-    print(outlook)
+        outlook = check_location(args.latlon[0], args.latlon[1], root)
+
+        print(outlook)
 
 

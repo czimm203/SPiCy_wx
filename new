@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+<name>20220324 1300Z Day 1 Categorical Outlook</name>
+<description>
+<![CDATA[
+Issue Time 0738 AM CDT THU MAR 24 2022<br />
+Valid Time 2022-03-24 1300Z - 2022-03-25 1200Z
+Visit <a href="https://www.spc.noaa.gov/products/outlook/">www.spc.noaa.gov/products/outlook/</a> for more info.
+]]>
+</description>
+
+<Schema name="day_1otlk_20220324_1300_cat" id="day_1otlk_20220324_1300_cat">
+	<SimpleField name="DN" type="int"></SimpleField>
+	<SimpleField name="VALID" type="string"></SimpleField>
+	<SimpleField name="EXPIRE" type="string"></SimpleField>
+	<SimpleField name="ISSUE" type="string"></SimpleField>
+	<SimpleField name="LABEL" type="string"></SimpleField>
+	<SimpleField name="LABEL2" type="string"></SimpleField>
+	<SimpleField name="stroke" type="string"></SimpleField>
+	<SimpleField name="fill" type="string"></SimpleField>
+</Schema>
+<Folder><name>day_1otlk_20220324_1300_cat</name><open>1</open><visibility>1</visibility>
+<Placemark><TimeSpan><begin>2022-03-24T13:00:00Z</begin><end>2022-03-25T12:00:00Z</end></TimeSpan>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+<name>General Thunder</name>
+<Style><LineStyle><color>ffffffff</color><width>4</width></LineStyle><PolyStyle><fill>1</fill><color>c0c0e8c0</color><width>3</width><outline>1</outline></PolyStyle></Style>        <ExtendedData><SchemaData schemaUrl="#day_1otlk_20220324_1300_cat">
+		<SimpleData name="DN">2</SimpleData>
+		<SimpleData name="VALID">202203241300</SimpleData>
+		<SimpleData name="EXPIRE">202203251200</SimpleData>
+		<SimpleData name="ISSUE">202203241238</SimpleData>
+		<SimpleData name="LABEL">TSTM</SimpleData>
+		<SimpleData name="LABEL2">General Thunderstorms Risk</SimpleData>
+		<SimpleData name="stroke">#55BB55</SimpleData>
+		<SimpleData name="fill">#C1E9C1</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-74.752695902841737,38.269962815133219 -76.2,38.25 -77.57,37.5 -79.2,35.35 -78.62,34.75 -77.17,34.23 -77.168979433204171,34.228168726111868 -77.521,34.032 -77.684,33.615 -77.95,33.516 -78.163,33.577 -78.569,33.483 -78.808,33.309 -78.931,32.928 -79.294,32.69 -79.725,32.427 -80.061,32.203 -80.21,32.07 -80.436,31.966 -80.764,31.633 -81.09,30.74 -80.989,30.128 -80.918757123995547,29.93044191123748 -80.92,29.93 -81.69,29.48 -82.33,28.53 -82.41,27.88 -81.99,27.27 -80.64,26.83 -79.710450857043924,26.690067870952852 -79.766,26.228 -79.812,25.576 -79.965,25.158 -80.143,24.859 -80.331,24.705 -80.635,24.487 -81.054,24.361 -81.782,24.208 -82.816,24.169 -83.288,24.221 -83.28,24.513 -83.238,24.798 -83.163,25.012 -82.313,25.017 -82.368,25.134 -82.51,25.288 -82.632,25.453 -81.934,25.61 -82.143,26.09 -82.324,26.171 -82.535,26.48 -82.719,26.892 -83.105,27.532 -83.07,27.615 -83.183,27.781 -83.185,28.105 -83.156,28.373 -83.014,28.465 -82.99,28.551 -83.026,28.753 -83.273,28.827 -83.421,29.093 -83.625,29.29 -83.895,29.642 -84.073,29.73 -84.171,29.626 -84.467,29.438 -85.018,29.246 -85.336,29.335 -85.675,29.436 -85.682483878062726,29.457150090177276 -83.15,31.64 -81.72,33.14 -80.04,34.86 -79.44,36.33 -79.7,36.86 -80.13,37.57 -80.01,38.16 -79.57,39.27 -79.05,40.25 -78.36,40.92 -77.24,41.33 -75.79,41.26 -73.74,41.44 -71.15,43.06 -68.68,43.73 -68.588590406976749,43.735174127906973 -68.681,43.688 -68.902,43.581 -69.149,43.51 -69.388,43.422 -69.557,43.333 -69.738,43.3 -69.962,43.13 -70.094,42.939 -70.041,42.768 -69.908,42.491 -69.795,42.31 -69.595,42.133 -69.483,42.001 -69.443,41.721 -69.548,41.498 -69.488,41.199 -69.663,41.018 -69.946,40.916 -70.34,40.942 -70.838,40.931 -71.244,40.859 -71.608,40.77 -72.156,40.586 -72.567,40.462 -72.944,40.361 -73.2,40.303 -73.648,40.236 -73.751,39.803 -73.839,39.533 -74.085,39.198 -74.395,38.991 -74.504,38.814 -74.716,38.67 -74.701,38.442 -74.752695902841737,38.269962815133219</coordinates></LinearRing></outerBoundaryIs></Polygon><Polygon><outerBoundaryIs><LinearRing><coordinates>-92.897701273525882,29.324025838588572 -92.24,30.25 -91.68,30.94 -90.93,31.25 -89.89,31.15 -88.72,30.56 -88.233305763024433,29.867079391424621 -88.406,29.863 -88.432,29.714 -88.695,29.394 -88.581,29.249 -88.619,29.022 -88.937,28.691 -89.175,28.63 -89.399,28.577 -89.712,28.693 -89.828,28.916 -90.102,28.755 -90.54,28.711 -90.745,28.711 -91.083,28.732 -91.315,28.893 -91.556,28.983 -91.655,29.121 -91.742,29.058 -92.079,29.114 -92.164,29.181 -92.629,29.233 -92.897701273525882,29.324025838588572</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+<Placemark><TimeSpan><begin>2022-03-24T13:00:00Z</begin><end>2022-03-25T12:00:00Z</end></TimeSpan>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+<name>Marginal Risk</name>
+<Style><LineStyle><color>ffffffff</color><width>4</width></LineStyle><PolyStyle><fill>1</fill><color>c07fc57f</color><width>4</width><outline>1</outline></PolyStyle></Style>
+        <ExtendedData><SchemaData schemaUrl="#day_1otlk_20220324_1300_cat">
+		<SimpleData name="DN">3</SimpleData>
+		<SimpleData name="VALID">202203241300</SimpleData>
+		<SimpleData name="EXPIRE">202203251200</SimpleData>
+		<SimpleData name="ISSUE">202203241238</SimpleData>
+		<SimpleData name="LABEL">MRGL</SimpleData>
+		<SimpleData name="LABEL2">Marginal Risk</SimpleData>
+		<SimpleData name="stroke">#005500</SimpleData>
+		<SimpleData name="fill">#66A366</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><Polygon><outerBoundaryIs><LinearRing><coordinates>-77.168979433204171,34.228168726111868 -77.17,34.23 -78.62,34.75 -79.2,35.35 -77.57,37.5 -76.2,38.25 -74.752695902841737,38.269962815133219 -74.762,38.239 -75.086,37.666 -75.263,37.548 -75.356,37.334 -75.645,36.894 -75.371,36.199 -75.12,35.649 -75.166,35.243 -75.279,34.984 -75.429,34.931 -75.726,34.857 -76.265,34.375 -76.54,34.248 -76.776,34.354 -76.936,34.358 -77.168979433204171,34.228168726111868</coordinates></LinearRing></outerBoundaryIs></Polygon><Polygon><outerBoundaryIs><LinearRing><coordinates>-79.710450857043924,26.690067870952852 -80.64,26.83 -81.99,27.27 -82.41,27.88 -82.33,28.53 -81.69,29.48 -80.92,29.93 -80.918757123995547,29.93044191123748 -80.765,29.498 -80.349,28.83 -80.197,28.552 -80.271,28.232 -79.788,27.148 -79.7,26.777 -79.710450857043924,26.690067870952852</coordinates></LinearRing></outerBoundaryIs></Polygon></MultiGeometry>
+  </Placemark>
+</Folder>
+</Document></kml>
