@@ -9,16 +9,6 @@ from geometry.polygon import Polygon
 from enum import Enum, auto
 
 
-
-cat = {
-        'General Thunder': 0,
-        'Marginal Risk': 1,
-        'Slight Risk': 2,
-        'Enhanced Risk': 3,
-        'Moderate Risk': 4,
-        'High Risk': 5
-        }
-
 urls = {
         "day_1_conv" : "https://www.spc.noaa.gov/products/outlook/day1otlk_cat.kmz",
         "day_2_conv" : "https://www.spc.noaa.gov/products/outlook/day2otlk_cat.kmz",
